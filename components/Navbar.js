@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import { useState, useEffect } from "react";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import Link from "next/link";

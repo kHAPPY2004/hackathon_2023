@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import faqdata from "/components/faqdata.json";
-import { FiChevronDown } from "react-icons/fi";
 const Faq = () => {
   const [openItemId, setOpenItemId] = useState(null);
 
