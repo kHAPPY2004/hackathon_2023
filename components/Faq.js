@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { faqdata } from "./faqdata";
-
+import faqdata from "/components/faqdata.json";
 const Faq = () => {
   const [openItemId, setOpenItemId] = useState(null);
 
@@ -26,7 +25,11 @@ const Faq = () => {
               {item.data_id}
             </div>
             {openItemId === item.id && (
-              <div className="bg-gray-100 text-lg font-medium p-4 mx-10 ">{item.data_title}</div>
+              <div className="bg-gray-100 text-lg font-medium p-4 mx-10 ">
+                {item.data_title.split("\n").map((line, index) => (
+                  <div key={index}>{line}</div>
+                ))}
+              </div>
             )}
           </div>
         ))}
