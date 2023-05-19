@@ -3,11 +3,10 @@ import React from "react";
 import data from "/components/data.json";
 import Pagination from "@/components/Pagination";
 import { paginate } from "@/components/paginate";
-import Navbar from "@/components/Navbar";
 import Faq from "@/components/Faq";
 const Problems = () => {
   const [search, setSearch] = useState("");
-  const [value, setValue] = useState("2");
+  const [value, setValue] = useState("8");
   const [currentPage, setCurrentPage] = useState(1);
   const onPageChange = (page) => {
     setCurrentPage(page);
@@ -20,11 +19,12 @@ const Problems = () => {
       setCurrentPage(currentPage + 1);
   };
   const paginatedPosts = paginate(data, currentPage, value);
-  console.log(data.length);
   return (
     <>
-      <Navbar />
-      <div className="relative overflow-auto dark:bg-slate-700">
+      <section className="relative overflow-auto bg-gray-50 dark:bg-slate-700">
+        <div className="font-bold text-2xl flex justify-center text-center mt-10">
+          Problem Statements
+        </div>
         <div className="shadow-sm overflow-hidden my-8">
           <div className="flex justify-between my-6 w-4/5 mx-auto">
             <div className="font-semibold text-base">
@@ -36,11 +36,12 @@ const Problems = () => {
                 }}
                 className="mx-2 px-1 text-lg"
               >
-                <option value="2">10</option>
-                <option value="6">25</option>
-                <option value="8">50</option>
-                <option value="12">100</option>
-                <option value="16">125</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
               </select>
               entries
             </div>
@@ -126,7 +127,7 @@ const Problems = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <Faq />
     </>
   );

@@ -11,12 +11,52 @@
   },
   {
     "id": 3,
-    "data_id": "Which payment methods do you accept?",
-    "data_title": "The payment for the hackathon was to be done only by the shortlisted team the ppt submission is free of cost The payment will be done through the provided payment link/qr-code for shortlisted team"
+    "data_id": "How do we Submit our idea?",
+    "data_title": "PLEASE NOTE: Idea submission must be made the team leader of a team only.\n1. One Team can submit ONLY ONE Idea.\n2. Submission dates should be strictly followed. No exceptions will be made.\n3. Participants should submit their innovation by filling a form available on website.\n4. After filling the form which is in pdf format they have to submit it.\n5. Entries to be sent only in the prescribed format; otherwise, they are bound to get rejected.\n6. Requests for changes in the Ideas post the cut off date shall not be entertained. Teams will not be edit any team details once the form is submitted."
   },
   {
     "id": 4,
-    "data_id": "Which payment methods do you accept?",
-    "data_title": "The payment for the hackathon was to be done only by the shortlisted team the ppt submission is free of cost The payment will be done through the provided payment link/qr-code for shortlisted team"
+    "data_id": "Is Accommodation available?",
+    "data_title": "Yes, it is available at the college campus but rooms will be allowed based on First come First served on payment basis. There are only limited rooms. Prior booking is allowed through google form for second-round registration."
+  },
+  {
+    "id": 5,
+    "data_id": "How should we form a team?",
+    "data_title": "1. Inter-college teams can be formed.\n2. Each team would comprise of 3-4 members.\n3. The Selected Team have to fill a form and have to submit it while registering."
+  },
+  {
+    "id": 6,
+    "data_id": "Is this online or offline ?",
+    "data_title": "The Hackathon Will be conducted in Offline mode only!"
+  },
+  {
+    "id": 7,
+    "data_id": "What is the Judgment criteria?",
+    "data_title": "The judging of the hackathon is generally based on the demo presentation given by the team.The 4 main judge decides the final winner according to the different criteria such as:-\n1. visibility\n2. Awesomeness\n3. Technological Stack\n4. Impact Created"
+  },
+  {
+    "id": 8,
+    "data_id": "What are the benefits for me , if i participate?",
+    "data_title": "Every team member will get goodies worth approx 500 INR if clears round1 (Idea acceptance). If you win the hackathon\nThe first prize is for 31,000/-\nSecond prize is for 21,000/-\nThird prize is for 11,000/-"
+  },
+  {
+    "id": 9,
+    "data_id": "Methodology",
+    "data_title": "1. The participants will have to choose the problem statement and register themself in the contest. The participants will be given to solve the real-time technical problems face by various institutes and college.\n2. They have to submit the proposal of their Problem statement which they will select. Then the students have to register for the Hackathon which will be the Grand Finale where they have to stay in the college and code here for 48 Hrs.\n3. Hackathon will be onsite and there will be 400/-(per team) registration charge."
+  },
+  {
+    "id": 10,
+    "data_id": "What i am supposed to do after getting acceptance notification ?",
+    "data_title": "After getting an approval notification, you will be submitting one more registration form sent via mail.\n This google form will ask you for confirmation that you are coming to the venue.\nDates of arrival, stay requirements will be asked (if required)."
+  },
+  {
+    "id": 11,
+    "data_id": "What is the selection criteria?",
+    "data_title": "Evaluation criteria will include novelty of the idea, complexity, clarity, and details in the prescribed\n format, feasibility, practicability, sustainability, the scale of impact, user experience and potential\n for future work progression"
+  },
+  {
+    "id": 12,
+    "data_id": "Are stay and meal free or on payment basis at venue ?",
+    "data_title": "The stay will be free on 3-4th and food will be available on coupen basis.(Satisfactory free coupens will also be provided)\n NO TA /DA will be provided to any team from POORNIMA HACKATHON 2023"
   }
 ]
