@@ -11,8 +11,7 @@ const Faq = () => {
     <>
       <div className="dark:bg-slate-800">
         <div className="text-center font-bold text-2xl py-8">FAQ</div>
-
-        <div className="flex flex-wrap w-3/4 pb-20 mx-auto">
+        <div className="flex flex-wrap lg:w-3/4 pb-20 mx-auto">
           {faqdata.map((item) => (
             <div
               key={item.id}
