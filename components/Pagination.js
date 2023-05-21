@@ -10,7 +10,7 @@ const Pagination = ({
   if (pagesCount === 1) return null;
   const pages = Array.from({ length: pagesCount }, (_, i) => i + 1);
   return (
-    <div className="xl:flex xl:space-x-2 mt-3 xl:mt-0 font-medium text-lg cursor-pointer bg-slate-100 dark:bg-slate-600 xl:bg-transparent">
+    <div className="xl:flex xl:space-x-2 mt-3 xl:mt-0 font-medium text-lg cursor-pointer bg-slate-100 dark:bg-slate-600 dark:xl:bg-transparent xl:bg-transparent">
       <div
         className="hover:text-gray-800 px-2 xl:px-0 dark:hover:text-gray-200 flex justify-center md:justify-start my-2 xl:my-0"
         onClick={() => onPrev()}
