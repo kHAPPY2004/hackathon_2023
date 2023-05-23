@@ -37,7 +37,7 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="bg-slate-50 dark:bg-slate-500 sticky top-0 z-10">
+    <nav className="bg-slate-50 dark:bg-slate-500 sticky top-0 z-50">
       <div className="px-0 lg:px-2 xl:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -52,8 +52,8 @@ const Navbar = () => {
                 ></Image>
               </Link>
             </div>
-            <div className="hidden md:block ml-3 lg:ml-12 xl:ml-28">
-              <div className="flex items-baseline space-x-0 lg:space-x-7 xl:space-x-16">
+            <div className="hidden md:block ml-3 lg:ml-12 xl:ml-24">
+              <div className="flex items-baseline space-x-0 lg:space-x-7 xl:space-x-12">
                 <Link
                   className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-bold"
                   href="/about"

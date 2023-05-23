@@ -1,12 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
 const Front = () => {
   return (
     <>
-      <Navbar />
       <section className="bg-gradient-to-r from-teal-500 from-10% via-cyan-500 via-30% to-sky-500 to-90%  dark:from-slate-700 dark:via-gray-700 dark:to-zinc-700">
-        <div className="container m-auto flex justify-between">
+        <div className="space-x-10 lg:space-x-40 justify-center flex">
           <div className=" m-auto mx-2 md:mx-0 md:w-1/2 lg:w-1/2 lg:h-1/2 xl:w-2/5 ">
             <div className="my-5">
               <h1 className="flex justify-center items-center text-center flex-col md:block font-semibold tracking-wider brightness-105 text-gray-700 dark:text-gray-300 leading-relaxed lg:text-2xl md:text-lg">
