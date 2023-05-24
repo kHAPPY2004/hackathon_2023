@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import Image from "next/image";
 const Carousel = ({ imagePaths, carouselWidth, carouselHeight }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,12 +30,15 @@ const Carousel = ({ imagePaths, carouselWidth, carouselHeight }) => {
   }, []); // Run only once on component mount
 
   return (
-    <div className="relative w-screen">
-      <img
+    <div className="relative h-auto">
+      <Image
         src={imagePaths[currentIndex]}
         alt="Carousel Image"
         className="w-full h-full"
-      />
+        width="10000"
+        height="10000"
+        priority
+      ></Image>
 
       <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
         {imagePaths.map((_, index) => (

@@ -8,11 +8,7 @@ const MyPage = () => {
     "/coursel/coursel_01.png",
   ];
 
-  return (
-    <div>
-      <Carousel imagePaths={imagePaths} />
-    </div>
-  );
+  return <Carousel imagePaths={imagePaths} />;
 };
 
 export default MyPage;

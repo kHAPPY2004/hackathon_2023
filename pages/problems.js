@@ -6,7 +6,7 @@ import { paginate } from "@/components/paginate";
 import Faq from "@/components/Faq";
 const Problems = () => {
   const [search, setSearch] = useState("");
-  const [value, setValue] = useState("1");
+  const [value, setValue] = useState("8");
   const [currentPage, setCurrentPage] = useState(1);
   const onPageChange = (page) => {
     setCurrentPage(page);
