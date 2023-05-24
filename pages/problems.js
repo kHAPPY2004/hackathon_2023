@@ -3,7 +3,7 @@ import React from "react";
 import data from "/components/data.json";
 import Pagination from "@/components/Pagination";
 import { paginate } from "@/components/paginate";
-import Faq from "@/components/Faq";
+
 const Problems = () => {
   const [search, setSearch] = useState("");
   const [value, setValue] = useState("8");
@@ -134,7 +134,6 @@ const Problems = () => {
           </div>
         </div>
       </section>
-      <Faq />
     </>
   );
 };

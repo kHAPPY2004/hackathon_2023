@@ -5,6 +5,9 @@ import Problems from "./problems";
 // import Carousel from "@/components/carousel";
 import MyPage from "@/components/Mypage";
 import Navbar from "@/components/Navbar";
+import Rules from "@/components/Rules";
+import Faq from "@/components/Faq";
+import Contact from "@/components/Contact";
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
@@ -12,6 +15,10 @@ export default function App({ Component, pageProps }) {
       <MyPage />
       <Front />
       <Problems />
+      <Rules />
+      <Faq />
+      <Contact />
+
       <Component {...pageProps} />
     </ThemeProvider>
   );
