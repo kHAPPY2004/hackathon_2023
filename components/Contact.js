@@ -2,7 +2,10 @@ import React from "react";
 
 const Contact = React.forwardRef((props, ref) => {
   return (
-    <section className="relative overflow-auto bg-gray-50 dark:bg-slate-700">
+    <section
+      id="contact"
+      className="relative overflow-auto bg-gray-50 dark:bg-slate-700 pt-7"
+    >
       <div className="font-bold text-lg md:text-2xl flex justify-center text-center mt-10 underline-offset-4 underline">
         Contact Us
       </div>

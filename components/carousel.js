@@ -30,7 +30,7 @@ const Carousel = ({ imagePaths, carouselWidth, carouselHeight }) => {
   }, []); // Run only once on component mount
 
   return (
-    <div className="relative h-auto">
+    <div className="relative h-auto lll">
       <Image
         src={imagePaths[currentIndex]}
         alt="Carousel Image"

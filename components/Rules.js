@@ -1,7 +1,7 @@
 import React from "react";
 const Rules = () => {
   return (
-    <div className="bg-slate-50 dark:bg-slate-700">
+    <div id="rules" className="bg-slate-50 dark:bg-slate-700 lll md:pt-16">
       <div className="container mx-auto py-5">
         <div className="flex justify-center items-center align-middle">
           <h3
@@ -11,9 +11,9 @@ const Rules = () => {
             Hackathon Guideline
           </h3>
         </div>
-        <div className="md:flex md:space-x-5 mx-6 lg:space-x-20 md:mx-5 lg:mx-10">
+        <div className="md:flex md:space-x-5 ml-4 mr-1 lg:space-x-20 md:mx-5 lg:mx-10">
           <div className="md:w-8/12">
-            <ul className="list-disc flex font-medium text-lg">
+            <ul className="list-disc flex font-medium text-xs md:text-lg">
               <li>
                 <span>
                   The responsibility of the components and the materials
@@ -23,7 +23,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   Team members can be a diverse group of students from various
@@ -33,7 +33,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   Each team would comprise of 3-4 members including the team
@@ -43,7 +43,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   Clearly communicate the email-ids and mobile numbers of all
@@ -51,7 +51,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   The Team Name should be unique and not contain the name of
@@ -59,7 +59,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   All code and documentation must be made available on an open
@@ -68,7 +68,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   While teams of all genders are welcome, having at least one
@@ -77,7 +77,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   Participants must be available to present their projects
@@ -87,7 +87,7 @@ const Rules = () => {
               Participants have to bear their own responsibility to safeguard
               their belongings during the event.
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   If an existing project is considered for the event, the
@@ -98,7 +98,7 @@ const Rules = () => {
             </ul>
           </div>
           <div className="md:w-8/12">
-            <ul className="list-disc flex font-medium text-lg">
+            <ul className="list-disc flex font-medium text-xs md:text-lg">
               <li>
                 <span>
                   No participant shall engage in any malicious/illegal
@@ -108,7 +108,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   Teams should be made up exclusively of students (or recent
@@ -118,7 +118,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   Teams can use libraries, frameworks, or open-source code in
@@ -129,14 +129,14 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   Meals for participants will be provided at the venue.
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   No reimbursement/travel allowance will be provided by "The
@@ -144,7 +144,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   Participants have to bear their own responsibility to
@@ -152,7 +152,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 Participants have to bear their own responsibility to safeguard
                 their belongings during the event.Participants have to bear
@@ -164,7 +164,7 @@ const Rules = () => {
                 </span>
               </li>
             </ul>
-            <ul className="list-disc flex font-medium text-lg mt-4">
+            <ul className="list-disc flex font-medium text-xs md:text-lg md:mt-4 mt-2">
               <li>
                 <span>
                   In case of a tie, the decision of Judges will be final and

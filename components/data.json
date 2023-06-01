@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "_1",
     "ps_id": "DK732",
     "ps_title": "Portable decoction of (Kashaya) Making Machine",
     "ps_data": "Background: Process of making Kashaya is a cumbersome process, hence there is usual non-compliance of patient to Kashaya. Summary: Kashaya refers to water detection or water extract of an herb or group of herbs. Dry herbs are taken as per the specific traditional Ayurveda Formula. Water is added 8 times of herbs and boiled over mild fire till it reduces to one fourth of its initial quantity. Problem Statement: Process of making Kashaya is a cumbersome process, hence there is usual non-compliance of patient to Kashaya. Objective: Automated portable Kashaya (Decoction) making device which can be carried at office / Work place with ease of portability.",
@@ -8,7 +8,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 2,
+    "id": "_2",
     "ps_id": "NC739",
     "ps_title": "Prototype of a Solar Powered IOT Device with the ability to connect to a smart network to be used in Geo Tagging of Physical Assets Created under CSR ",
     "ps_data": "Prototype of a Solar Powered IOT Device with the ability to connect to a smart network to be used in Geo Tagging of Physical Assets Created under CSR.",
@@ -16,7 +16,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 3,
+    "id": "_3",
     "ps_id": "VM742",
     "ps_title": "Smart Buffer Stock Solution",
     "ps_data": "Background: In 2017, the government was struggling to keep prices of the essential vegetable affordable as retail prices had crossed Rs 60 per kg in Delhi. Then Union Food Minister had expressed his helplessness in controlling onion prices and blamed reduction in the area of cultivation and hoarding by traders for the shortage. The government was forced to take measures such as procuring onions from local markets and discouraging exports to bring the prices down. In order to keep a watch on the hoarders, the government has roped in various agencies to keep a check on the hoarding activities over the period of time. Also, with predictions of a 'below average' monsoon in the year 2019, the Central government asked procurement agencies to store at least 50,000 tons of onions to ensure that market prices remain under control in case of shortage. The buffer stock would be used to control prices in case there is a shortage of onions in the market. Fluctuating weather and decreasing monsoon, causes decrease in crop (onion) output which in turn creates a demand supply gap hence leading to increase in prices or inflation. Summary: Reports from across the country indicate there has been an unnatural spike in the prices of vegetables, disrupting the carefully planned kitchen budgets of millions. An all-India survey on the retail price of vegetables like onions and tomatoes between November 18 and 28 showed that most households in big tier-1 cities forked out around Rs 100 for a kilo, while the average payout in tier-2 and tier-3 cities was Rs 80 per kg. Even the prices of sturdier staple vegetable—potato are up about 20%. Unseasonal rains all over the country have ruined vegetable crops and disrupted market operations, creating a shortage. High diesel prices too have added to the woes of consumers as they bear the increased transport costs. The crash and spurt in prices of these essential veggies has unfortunately become an acceptable cycle. For instance, last year saw a high in onion prices in September and a huge spurt again was witnessed this February on account of unseasonal rains. Then followed a sudden spurt in production by mid-March triggering a 30-40% fall in prices. In Lasalgaon, India’s onion hub, farmers were in tears as prices crashed from Rs 4,000 a quintal to a low of Rs 2,500. The government had to take last-minute measures like banning onion exports as soon as prices soar. One of the reasons prices of potatoes are relatively stable compared to other vegetables is because they use 90% of the warehousing cold storage space and do not rot easily. Similar cold chain/ storage infrastructure for other important veggies, with central support, will give better returns to farmers and provide stable prices to consumers. The more perishable onions and tomatoes can be processed and stored, as is done in many advanced countries. Objective: The Department wishes to create buffer stock of onions in the harvest season and keep the buffer stock intact with its food value, moisture and taste for at least a period of six months from date of storage. We would want the technical solution to be proposed for the following:- (a (a) Storage of onions in the traditional storage systems and warehouses available in the country. (b) Technical solutions for storage of onions in temperature controlled storage systems, warehouses.",
@@ -24,7 +24,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 4,
+    "id": "_4",
     "ps_id": "RK770",
     "ps_title": "Smart knee actuator cushion using pressure sensitive material",
     "ps_data": "Background: Current materials used in assistive knee devices need improvement to better respond to the movement changes in the knee.Summary: Developing more effective knee assistive devices is in urgent need for effectively recovering their motion capabilities and improving their self-living activities. Objective: The solution is expected to be designed using a pressure sensitive material and act as a 'smart' actuator cushion for the knees, such that it may be used in knee braces or other devices. The cushion should intelligently adjust its dynamics like shape, size and elasticity based on the pressure exerted by the knees.",
@@ -32,7 +32,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 5,
+    "id": "_5",
     "ps_id": "RK777",
     "ps_title": "Development of Software for AAC for persons with different disabilities",
     "ps_data": "Background: Android or Web based application for AAC for people with disabilities to have better interaction with people around.Summary: Persons with different disabilities especially with speech, hearing, visual and mental retardation face a lot of problems in carrying out smooth communication with available aids and appliances. Currently AACs are available but the majority of them are costly and made abroad. Hence not user friendly. The strong need is there to develop cost effective indigenous AACs for persons with different disabilities. Objective: Cost effective AAC for better interaction with specially challenged people.",
@@ -40,7 +40,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 6,
+    "id": "_6",
     "ps_id": "BV800",
     "ps_title": "Artificial intelligence enabled robotic trash boat to drive & harvest floating trash from urban drain- ",
     "ps_data": "Problem Statements: A large quantity of floating trash is finding its way into the urban drainage systems from where it is potentially able to travel via the urban drain, streams, rivers, lakes and estuaries until it eventually reaches the open sea. A prototype artificial intelligence enabled robotic trash boat can be developed which can harvest floating trash from urban drain. The trash boat can be operated online/remotely. Prerequisites: • Weight and type of harvested trash • Location, Geo-tagged Photograph, Video • Easy to operate Solution: • Develop an aquatic drone/ trash boat • Handled/ controlled by mobile app • Live operational monitoring on geo web portal like Bhuvan Ganga Geoportal https://bhuvan.nrsc.gov.in/governance/mowr_ganga.php",
@@ -48,7 +48,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 7,
+    "id": "_7",
     "ps_id": "BV807",
     "ps_title": "Suggest an innovative technical approach to address the air pollution and stubble burning in Delhi/NCR.",
     "ps_data": "According to the WHO, in 2012 ambient air pollution contributed to 6.7 % of all deaths worldwide. In particular, 16% of lung cancer deaths, 11% of chronic obstructive pulmonary disease deaths, and more than 20% of ischaemic heart disease and stroke are associated with ambient fine particulate matter. The economic cost of the approximate 600 000 premature deaths and of the diseases caused by air pollution in the WHO European Region in 2010 has been estimated in Euro 1.5 trillion.People in Delhi/NCR are having their annual tryst with the deadly winter air pollution where toxic clouds of smog engulf this region every year around the winter months. Contributing to nearly 30% of winter air pollution in Delhi, stubble burning across the nearby states of Punjab, Haryana is attributed as one of the major factors for the existence of Air Pollution in the region during this period.The main objective is to suggest an unique approach to address the urban air pollution using Technology.",
@@ -56,7 +56,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 8,
+    "id": "_8",
     "ps_id": "ST889",
     "ps_title": "Scarcity of water in hilly areas during summer months",
     "ps_data": "One of the major problems being faced in hill areas is severe scarcity of water during the summer months. Places, which are located in higher reaches and have witnessed rapid increase in population in the last few years often have to face severe shortage of water during summer months. At most places, water supply is received from natural underground water systems. With rapid urbanisation resulting in an increase in concrete surfaces, the water infiltration into ground during the rainy season has considerably decreased over the years. Thus, the natural sources often become insufficient to support the population, which is dependent on them. Large water tanks are often built in these places, where water is pumped from lower areas which are close to a river, lake etc. Water harvesting in these areas is a difficult task due to the rocky surface and restrictions related to blasting etc. A solution may be sought from students through this hackathon to solve the water problem.",
@@ -64,7 +64,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 9,
+    "id": "_9",
     "ps_id": "GS904",
     "ps_title": "Smart wearables for rescuers/victims",
     "ps_data": "For different disasters like high altitude mountain rescue, flood water rescues, the rescuers need to work in isolated places. Rescuers/victims has current challenges that they cannot raise the alarm about potential or current danger. Also, the current location of them is not accurate to track back if in case of emergency. With the challenges that rescuers/victims cannot raise an alarm about potential or current danger, use of IoT enabled devices can be helpful to mitigate the risks to the rescuers. These wearables need to be in different categories i) Communication System which can create a wireless cloud of connectivity that can serve a large area seamlessly. It should be such that it works in the worst situations, without power and integrated antennas ii) Personal Gears- Sensor based wristband iii) Hi-tech Fabric consisting of sensors which can be helpful in handling the disasters especially in fire and flood. iv) Breathable PPE with protection from head to toe during Flood Water Rescue and Covid related ops v) Rescue Blanket- Requirement of a multipurpose comfort blanket for relief camps or disaster relief that consists of a waterproof, flexible, robust material on the outside, and the inside is lined with antimicrobial, soft, and quick-drying microfibers. The blankets can be rolled out into a sleeping bag or fold into a backpack vi) Triage - Triage is a process that assists medical officer to categorize condition of patient and arrange appropriate treatment for them. Designing an automated triage system for field medics, consisting of sensor-laden clothing that detects potential injury and a web platform that prioritizes care. Automated Triage System may be developed to perform triage within time limitation for each patient and consistent triage decision.a) Sufficient communication tools will help in raising the alarm about potential or current danger, they will also aid in recovery by showing the location of individuals and equipment to rescuers b) It can be used as a tracking device for thermal detection which can detect ambient air as well as body temperatures and SPO2 levels which can be relayed back to the control room using a hub with a Wi-Fi or Ethernet connection. c) The detectors can be integrated, and the system can be designed to alert the other responders if any rescuer falls unconscious in a confined area inside the rubble (Distress signal). d) NDRF is already holding the “Distress signal alarm unit” which is being used at present and it gives out alarm after 25 Sec of inactivity in the rescuer’s body. e) The rescuers will be able to identify the best possible routes in smoky environment f) Fabric will help in remaining afloat and surviving during emergencies in rough waters. It will be completely waterproof and will have an ability to withstand extreme temperatures of water and fire. g) The rescuers will be able to work tirelessly for longer duration h) It will help in preventing the infections while in rescue operations. i) This blanket will assist in body heat retention in emergency situations. j) It can be folded to a compact size for easy storage, k) It will help in hypothermia prevention. l) Automated triage system could improve quality of service and reduce costs due to misappropriate of resources. m) The developed system may consist biomedical modules, graphical user interface (GUI) using Microsoft Visual Studio and triage decision making algorithm. This system may acquire vital signs, syndrome, and chief complaint from patient. The acquired data will be analyzed using triage decision making algorithm and triage level of a patient reported instantly. All information and patient records will be stored in database for future reference.",
@@ -72,7 +72,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 10,
+    "id": "_10",
     "ps_id": "GS908",
     "ps_title": "Borewell Rescue Operations ",
     "ps_data": "A borewell is a deep, narrow hole drilled into the ground from which water is drawn through a pipe and pump. Borewells are typically small in diameter — ranging from 4.5 inches (low-capacity borewell) to 12 inches (high-capacity borewell). Borewells tap into water-bearing soil or rock layers called aquifers and can go as deep as 1,500 feet into the ground. There is a tendency in the rural areas, where these Borewells are left unattended and uncovered, due to which mostly little children fall into these and thus NDRF is requisitioned for the rescue. It is of utmost importance to design an indigenous compact system which may include all the hardware and software and thus help in saving the lives. NDRF doesn’t have any specialized equipment for the rescue operations and the methodology adopted is as per the situation. NDRF is presently a combination of tools/equipment for Borewell rescue, which involves J-Hook, Cloth Bucket, Magic Ball, Pendant Jhula and Umbrella Tool. All these tools are improvised in nature and have been tested in different scenariosa). It will help in effectively handling the Borewell Rescue operations b) It will minimize the time spent in planning and executing the plan. c) Lesser time will increase the success percentage",
@@ -80,7 +80,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 11,
+    "id": "_11",
     "ps_id": "GS908",
     "ps_title": "Borewell Rescue Operations ",
     "ps_data": "A borewell is a deep, narrow hole drilled into the ground from which water is drawn through a pipe and pump. Borewells are typically small in diameter — ranging from 4.5 inches (low-capacity borewell) to 12 inches (high-capacity borewell). Borewells tap into water-bearing soil or rock layers called aquifers and can go as deep as 1,500 feet into the ground. There is a tendency in the rural areas, where these Borewells are left unattended and uncovered, due to which mostly little children fall into these and thus NDRF is requisitioned for the rescue. It is of utmost importance to design an indigenous compact system which may include all the hardware and software and thus help in saving the lives. NDRF doesn’t have any specialized equipment for the rescue operations and the methodology adopted is as per the situation. NDRF is presently a combination of tools/equipment for Borewell rescue, which involves J-Hook, Cloth Bucket, Magic Ball, Pendant Jhula and Umbrella Tool. All these tools are improvised in nature and have been tested in different scenariosa). It will help in effectively handling the Borewell Rescue operations b) It will minimize the time spent in planning and executing the plan. c) Lesser time will increase the success percentage",
@@ -88,7 +88,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 12,
+    "id": "_12",
     "ps_id": "GS908",
     "ps_title": "Borewell Rescue Operations ",
     "ps_data": "A borewell is a deep, narrow hole drilled into the ground from which water is drawn through a pipe and pump. Borewells are typically small in diameter — ranging from 4.5 inches (low-capacity borewell) to 12 inches (high-capacity borewell). Borewells tap into water-bearing soil or rock layers called aquifers and can go as deep as 1,500 feet into the ground. There is a tendency in the rural areas, where these Borewells are left unattended and uncovered, due to which mostly little children fall into these and thus NDRF is requisitioned for the rescue. It is of utmost importance to design an indigenous compact system which may include all the hardware and software and thus help in saving the lives. NDRF doesn’t have any specialized equipment for the rescue operations and the methodology adopted is as per the situation. NDRF is presently a combination of tools/equipment for Borewell rescue, which involves J-Hook, Cloth Bucket, Magic Ball, Pendant Jhula and Umbrella Tool. All these tools are improvised in nature and have been tested in different scenariosa). It will help in effectively handling the Borewell Rescue operations b) It will minimize the time spent in planning and executing the plan. c) Lesser time will increase the success percentage",
@@ -96,7 +96,7 @@
     "domain": "Agriculture and village upliftment"
   },
   {
-    "id": 13,
+    "id": "_13",
     "ps_id": "GS908",
     "ps_title": "Borewell Rescue Operations ",
     "ps_data": "A borewell is a deep, narrow hole drilled into the ground from which water is drawn through a pipe and pump. Borewells are typically small in diameter — ranging from 4.5 inches (low-capacity borewell) to 12 inches (high-capacity borewell). Borewells tap into water-bearing soil or rock layers called aquifers and can go as deep as 1,500 feet into the ground. There is a tendency in the rural areas, where these Borewells are left unattended and uncovered, due to which mostly little children fall into these and thus NDRF is requisitioned for the rescue. It is of utmost importance to design an indigenous compact system which may include all the hardware and software and thus help in saving the lives. NDRF doesn’t have any specialized equipment for the rescue operations and the methodology adopted is as per the situation. NDRF is presently a combination of tools/equipment for Borewell rescue, which involves J-Hook, Cloth Bucket, Magic Ball, Pendant Jhula and Umbrella Tool. All these tools are improvised in nature and have been tested in different scenariosa). It will help in effectively handling the Borewell Rescue operations b) It will minimize the time spent in planning and executing the plan. c) Lesser time will increase the success percentage",

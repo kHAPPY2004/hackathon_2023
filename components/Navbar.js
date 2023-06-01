@@ -4,6 +4,8 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -37,7 +39,7 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="bg-slate-50 dark:bg-slate-500 sticky top-0 z-50">
+    <nav className="bg-slate-50 dark:bg-slate-500 sticky top-0 z-40">
       <div className="px-0 lg:px-2 xl:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -52,51 +54,64 @@ const Navbar = () => {
                 ></Image>
               </Link>
             </div>
-            <div className="hidden md:block ml-3 lg:ml-12 xl:ml-24">
+            <div className="hidden md:block ml-0 lg:ml-14 xl:ml-22">
               <div className="flex items-baseline space-x-0 lg:space-x-7 xl:space-x-12">
-                <Link
+                <ScrollLink
                   className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-bold"
-                  href="/about"
+                  to="problem_statement"
+                  smooth={true}
+                  duration={500}
                 >
                   PROBLEM_STATEMENTS
-                </Link>
-                <Link
+                </ScrollLink>
+                <ScrollLink
                   className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-bold"
-                  href="/about"
+                  to="prize"
+                  smooth={true}
+                  duration={500}
                 >
                   PRIZE
-                </Link>
-                <Link
+                </ScrollLink>
+                <ScrollLink
                   className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-bold"
-                  href="/about"
+                  to="sponsor"
+                  smooth={true}
+                  duration={500}
                 >
                   SPONSOR
-                </Link>
-                <Link
-                  className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-base font-bold"
-                  href="/about"
+                </ScrollLink>
+                <ScrollLink
+                  className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-bold"
+                  to="faq"
+                  smooth={true}
+                  duration={500}
                 >
                   FAQ
-                </Link>
-                <Link
+                </ScrollLink>
+                <ScrollLink
                   className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-bold"
-                  href="/about"
+                  to="faq"
+                  smooth={true}
+                  duration={500}
                 >
                   AGENDA
-                </Link>
-                <Link
+                </ScrollLink>
+                <ScrollLink
                   className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-bold"
-                  href="/about"
+                  to="rules"
+                  smooth={true}
+                  duration={500}
                 >
                   RULES
-                </Link>
-                <Link
+                </ScrollLink>
+                <ScrollLink
                   className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-bold"
-                  href="/about"
+                  to="contact"
+                  smooth={true}
+                  duration={500}
                 >
                   CONTACT
-                </Link>
-                {/* Add more menu items here */}
+                </ScrollLink>
               </div>
             </div>
           </div>
@@ -150,50 +165,62 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link
-              href="/"
+            <ScrollLink
               className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
+              to="problem_statement"
+              smooth={true}
+              duration={500}
             >
               PROBLEM_STATEMENTS
-            </Link>
-            <Link
-              href="/"
+            </ScrollLink>
+            <ScrollLink
               className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
+              to="prize"
+              smooth={true}
+              duration={500}
             >
               PRIZE
-            </Link>
-            <Link
-              href="/"
+            </ScrollLink>
+            <ScrollLink
               className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
+              to="sponsor"
+              smooth={true}
+              duration={500}
             >
               SPONSOR
-            </Link>
-            <Link
-              href="/"
+            </ScrollLink>
+            <ScrollLink
               className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
+              to="faq"
+              smooth={true}
+              duration={500}
             >
               FAQ
-            </Link>
-            <Link
-              href="/"
+            </ScrollLink>
+            <ScrollLink
               className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
+              to="faq"
+              smooth={true}
+              duration={500}
             >
               AGENDA
-            </Link>
-            <Link
-              href="/"
+            </ScrollLink>
+            <ScrollLink
               className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
+              to="rules"
+              smooth={true}
+              duration={500}
             >
               RULES
-            </Link>
-            <Link
-              href="/"
+            </ScrollLink>
+            <ScrollLink
               className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
+              to="contact"
+              smooth={true}
+              duration={500}
             >
               CONTACT
-            </Link>
-
-            {/* Add more menu items here */}
+            </ScrollLink>
           </div>
         </div>
       )}
@@ -202,4 +229,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-//  <div className=" absolute top-7 right-10">{renderThemeCharger()}</div>
