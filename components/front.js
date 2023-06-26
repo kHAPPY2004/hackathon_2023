@@ -53,7 +53,7 @@ const Front = () => {
 
   return (
     <>
-      <section className="bg-gradient-to-r lll from-teal-500 from-10% via-cyan-600 via-30% to-sky-500 to-90%  dark:from-slate-700 dark:via-gray-700 dark:to-zinc-700">
+      <section className="bg-gradient-to-r lll py-10 from-teal-500 from-10% via-cyan-600 via-30% to-sky-500 to-90%  dark:from-slate-700 dark:via-gray-700 dark:to-zinc-700">
         <div className="space-x-10 lg:space-x-40 justify-center flex">
           <div className="m-auto mx-2 md:mx-0 md:w-1/2 lg:w-1/2 lg:h-1/2 xl:w-2/5">
             <div ref={ref}>

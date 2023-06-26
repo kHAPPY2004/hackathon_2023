@@ -23,7 +23,7 @@ const Carousel = ({ imagePaths }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       goToNext();
-    }, 6000);
+    }, 3000);
 
     return () => {
       clearInterval(interval);
@@ -44,7 +44,7 @@ const Carousel = ({ imagePaths }) => {
   };
 
   return (
-    <div className="relative h-auto">
+    <div className="relative h-auto overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -55,12 +55,15 @@ const Carousel = ({ imagePaths }) => {
           src={imagePaths[currentIndex]}
           alt="Carousel Image"
           className="w-full h-full"
-          initial={{ scale: 0.5, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0.5, opacity: 0 }}
+          // initial={{ scale: 0.5, opacity: 0 }}
+          // animate={{ scale: 1, opacity: 1 }}
+          // exit={{ scale: 0.5, opacity: 0 }}
           // initial={{ x: -1000, y: 100, opacity: 0 }}
           // animate={{ x: 0, y: 0, opacity: 1 }}
           // exit={{ x: 1000, y: -100, opacity: 0 }}
+          initial={{ x: 1000, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: -1000, opacity: 0 }}
           transition={{
             x: { type: "spring", stiffness: 300, damping: 30 },
             opacity: { duration: 0.2 },

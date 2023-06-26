@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import { RxCross2 } from "react-icons/rx";
 import data from "/components/data.json";
 import Pagination from "@/components/Pagination";
 import { paginate } from "@/components/paginate";
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 const Problems = () => {
   function blur() {
     let elems1 = document.querySelectorAll(".lll");
@@ -34,16 +36,43 @@ const Problems = () => {
       setCurrentPage(currentPage + 1);
   };
   const paginatedPosts = paginate(data, currentPage, value);
+
+  const { ref, inView } = useInView({
+    threshold: 0.28,
+  });
+  const animation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        y: 0,
+        opacity: 1,
+        transition: { type: "spring", duration: 2, bounce: 0.3 },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-100vw",
+        y: 100,
+        opacity: 0,
+      });
+    }
+  }, [inView]);
+
   return (
     <>
       <section
+        ref={ref}
         id="problem_statement"
         className="relative lll overflow-auto bg-gray-50 dark:bg-slate-700 md:pt-16 pt-7"
       >
         <div className="font-bold text-lg md:text-2xl flex justify-center text-center mt-10 underline-offset-4 underline">
           Problem Statements
         </div>
-        <div className="shadow-sm overflow-hidden mt-0 md:my-8">
+        <motion.div
+          animate={animation}
+          className="shadow-sm overflow-hidden mt-0 md:my-8"
+        >
           <div className="flex flex-col md:flex-row justify-between my-6 mx-1 md:mx-10 xl:w-4/5 xl:mx-auto">
             <div className="font-medium text-xs md:text-base">
               Show
@@ -163,7 +192,7 @@ const Problems = () => {
               onNext={onNext}
             />
           </div>
-        </div>
+        </motion.div>
       </section>
       {/* pop up data */}
       <div className="flex flex-wrap justify-center items-center">

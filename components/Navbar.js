@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +39,9 @@ const Navbar = () => {
       );
     }
   };
+
+  const animateFrom = { opacity: 0, y: -40, x: -40 };
+  const animateTo = { opacity: 1, y: 0, x: 0 };
   return (
     <nav className="bg-slate-50 dark:bg-slate-500 sticky top-0 z-40">
       <div className="px-0 lg:px-2 xl:px-8">
@@ -163,64 +167,127 @@ const Navbar = () => {
         {renderThemeCharger()}
       </div>
       {isOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden border-t-2 absolute bg-white dark:bg-slate-500 w-full">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <ScrollLink
-              className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
-              to="problem_statement"
-              smooth={true}
-              duration={500}
+            <motion.div
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.05 }}
             >
-              PROBLEM_STATEMENTS
-            </ScrollLink>
-            <ScrollLink
-              className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
-              to="prize"
-              smooth={true}
-              duration={500}
+              <ScrollLink
+                className="text-black dark:text-white hover:bg-gray-700 hover:text-white hover:dark:text-cyan-200 block px-3 py-2 rounded-md text-lg font-bold"
+                to="problem_statement"
+                smooth={true}
+                duration={500}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                PROBLEM_STATEMENTS
+              </ScrollLink>
+            </motion.div>
+            <motion.div
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.1 }}
             >
-              PRIZE
-            </ScrollLink>
-            <ScrollLink
-              className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
-              to="sponsor"
-              smooth={true}
-              duration={500}
+              <ScrollLink
+                className="text-black dark:text-white hover:bg-gray-700 hover:text-white hover:dark:text-cyan-200 block px-3 py-2 rounded-md text-lg font-bold"
+                to="prize"
+                smooth={true}
+                duration={500}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                PRIZE
+              </ScrollLink>
+            </motion.div>
+            <motion.div
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.15 }}
             >
-              SPONSOR
-            </ScrollLink>
-            <ScrollLink
-              className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
-              to="faq"
-              smooth={true}
-              duration={500}
+              <ScrollLink
+                className="text-black dark:text-white hover:bg-gray-700 hover:text-white hover:dark:text-cyan-200 block px-3 py-2 rounded-md text-lg font-bold"
+                to="sponsor"
+                smooth={true}
+                duration={500}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                SPONSOR
+              </ScrollLink>
+            </motion.div>
+            <motion.div
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.2 }}
             >
-              FAQ
-            </ScrollLink>
-            <ScrollLink
-              className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
-              to="faq"
-              smooth={true}
-              duration={500}
+              <ScrollLink
+                className="text-black dark:text-white hover:bg-gray-700 hover:text-white hover:dark:text-cyan-200 block px-3 py-2 rounded-md text-lg font-bold"
+                to="faq"
+                smooth={true}
+                duration={500}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                FAQ
+              </ScrollLink>
+            </motion.div>
+            <motion.div
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.25 }}
             >
-              AGENDA
-            </ScrollLink>
-            <ScrollLink
-              className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
-              to="rules"
-              smooth={true}
-              duration={500}
+              <ScrollLink
+                className="text-black dark:text-white hover:bg-gray-700 hover:text-white hover:dark:text-cyan-200 block px-3 py-2 rounded-md text-lg font-bold"
+                to="faq"
+                smooth={true}
+                duration={500}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                AGENDA
+              </ScrollLink>
+            </motion.div>
+            <motion.div
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.3 }}
             >
-              RULES
-            </ScrollLink>
-            <ScrollLink
-              className="text-black dark:text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-bold"
-              to="contact"
-              smooth={true}
-              duration={500}
+              <ScrollLink
+                className="text-black dark:text-white hover:bg-gray-700 hover:text-white hover:dark:text-cyan-200 block px-3 py-2 rounded-md text-lg font-bold"
+                to="rules"
+                smooth={true}
+                duration={500}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                RULES
+              </ScrollLink>
+            </motion.div>
+            <motion.div
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: 0.35 }}
             >
-              CONTACT
-            </ScrollLink>
+              <ScrollLink
+                className="text-black dark:text-white hover:bg-gray-700 hover:text-white hover:dark:text-cyan-200 block px-3 py-2 rounded-md text-lg font-bold"
+                to="contact"
+                smooth={true}
+                duration={500}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                CONTACT
+              </ScrollLink>
+            </motion.div>
           </div>
         </div>
       )}
