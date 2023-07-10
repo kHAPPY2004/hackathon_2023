@@ -145,7 +145,9 @@ const Problems = () => {
                       <td className="border-b border-slate-100 dark:border-slate-700 pl-3 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
                         {item.ps_id}
                       </td>
-                      <td
+                      <motion.td
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.9 }}
                         key={item.id}
                         onClick={() => {
                           const elems = document.querySelectorAll(
@@ -159,7 +161,7 @@ const Problems = () => {
                         className="border-b cursor-pointer border-slate-100 dark:border-slate-700 pl-1 md:p-4 md:pl-8 text-blue-500 dark:text-blue-300"
                       >
                         {item.ps_title}
-                      </td>
+                      </motion.td>
                       <td className="border-b border-slate-100 dark:border-slate-700 pl-5 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
                         {item.category}
                       </td>
