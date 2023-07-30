@@ -47,7 +47,7 @@ const Problems = () => {
         x: 0,
         y: 0,
         opacity: 1,
-        transition: { type: "spring", duration: 2, bounce: 0.3 },
+        transition: { type: "spring", duration: 2, bounce: 0.05 },
       });
     }
     if (!inView) {
@@ -55,6 +55,7 @@ const Problems = () => {
         x: "-100vw",
         y: 100,
         opacity: 0,
+        transition: { type: "spring", duration: 2, bounce: 0.05 },
       });
     }
   }, [inView]);
@@ -81,7 +82,7 @@ const Problems = () => {
                   setValue(e.target.value);
                   setCurrentPage(1);
                 }}
-                className="mx-2 px-1 text-lg"
+                className="mx-2 px-1 md:text-lg rounded-sm"
               >
                 <option value="8">8</option>
                 <option value="10">10</option>
