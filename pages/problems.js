@@ -32,10 +32,9 @@ const Problems = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1);
   };
   const onNext = () => {
-    if (currentPage < Math.ceil(data.length / value))
+    if (currentPage < Math.ceil(filteredData.length / value))
       setCurrentPage(currentPage + 1);
   };
-  const paginatedPosts = paginate(data, currentPage, value);
 
   const { ref, inView } = useInView({
     threshold: 0.28,
@@ -60,6 +59,19 @@ const Problems = () => {
     }
   }, [inView]);
 
+  const filteredData = data.filter((item) => {
+    const searchTerm = search.trim().toLowerCase();
+    return (
+      searchTerm === "" ||
+      item.ps_id.toLowerCase().includes(searchTerm) ||
+      item.ps_title.toLowerCase().includes(searchTerm) ||
+      item.category.toLowerCase().includes(searchTerm) ||
+      item.domain.toLowerCase().includes(searchTerm)
+    );
+  });
+
+  // Paginate the filtered data
+  const paginatedPosts = paginate(filteredData, currentPage, value);
   return (
     <>
       <section
@@ -124,53 +136,72 @@ const Problems = () => {
                 </tr>
               </thead>
               <tbody>
-                {paginatedPosts
-                  .filter((item) => {
-                    const searchTerm = search.toLowerCase();
-                    return searchTerm === ""
-                      ? item
-                      : item.ps_id.toLowerCase().includes(searchTerm) ||
-                          item.ps_title.toLowerCase().includes(searchTerm) ||
-                          item.category.toLowerCase().includes(searchTerm) ||
-                          item.domain.toLowerCase().includes(searchTerm);
-                  })
-
-                  .map((item) => (
-                    <tr
-                      key={item.id}
-                      className="even:bg-slate-100 odd:bg-emerald-50 dark:even:bg-gray-600 dark:odd:bg-slate-500"
+                {paginatedPosts.filter((item) => {
+                  const searchTerm = search.trim().toLowerCase();
+                  return (
+                    item.ps_id.toLowerCase().includes(searchTerm) ||
+                    item.ps_title.toLowerCase().includes(searchTerm) ||
+                    item.category.toLowerCase().includes(searchTerm) ||
+                    item.domain.toLowerCase().includes(searchTerm)
+                  );
+                }).length === 0 ? (
+                  <tr>
+                    <td
+                      colSpan="5"
+                      className="text-center md:font-bold md:text-lg py-7 text-red-400"
                     >
-                      <td className="border-b border-slate-100 dark:border-slate-700 pl-2 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
-                        {String(item.id).split("_")[1]}
-                      </td>
-                      <td className="border-b border-slate-100 dark:border-slate-700 pl-3 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
-                        {item.ps_id}
-                      </td>
-                      <motion.td
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.9 }}
+                      No results found
+                    </td>
+                  </tr>
+                ) : (
+                  paginatedPosts
+                    .filter((item) => {
+                      const searchTerm = search.trim().toLowerCase(); // Trim white spaces
+                      return (
+                        searchTerm === "" ||
+                        item.ps_id.toLowerCase().includes(searchTerm) ||
+                        item.ps_title.toLowerCase().includes(searchTerm) ||
+                        item.category.toLowerCase().includes(searchTerm) ||
+                        item.domain.toLowerCase().includes(searchTerm)
+                      );
+                    })
+                    .map((item) => (
+                      <tr
                         key={item.id}
-                        onClick={() => {
-                          const elems = document.querySelectorAll(
-                            `.${item.id}`
-                          );
-                          [].forEach.call(elems, function (el) {
-                            el.classList.toggle("hidden");
-                          });
-                          blur();
-                        }}
-                        className="border-b cursor-pointer border-slate-100 dark:border-slate-700 pl-1 md:p-4 md:pl-8 text-blue-500 dark:text-blue-300"
+                        className="even:bg-slate-100 odd:bg-emerald-50 dark:even:bg-gray-600 dark:odd:bg-slate-500"
                       >
-                        {item.ps_title}
-                      </motion.td>
-                      <td className="border-b border-slate-100 dark:border-slate-700 pl-5 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
-                        {item.category}
-                      </td>
-                      <td className="border-b border-slate-100 dark:border-slate-700 pl-1 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
-                        {item.domain}
-                      </td>
-                    </tr>
-                  ))}
+                        <td className="border-b border-slate-100 dark:border-slate-700 pl-2 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
+                          {String(item.id).split("_")[1]}
+                        </td>
+                        <td className="border-b border-slate-100 dark:border-slate-700 pl-3 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
+                          {item.ps_id}
+                        </td>
+                        <motion.td
+                          whileHover={{ scale: 1.2 }}
+                          whileTap={{ scale: 0.9 }}
+                          key={item.id}
+                          onClick={() => {
+                            const elems = document.querySelectorAll(
+                              `.${item.id}`
+                            );
+                            [].forEach.call(elems, function (el) {
+                              el.classList.toggle("hidden");
+                            });
+                            blur();
+                          }}
+                          className="border-b cursor-pointer border-slate-100 dark:border-slate-700 pl-1 md:p-4 md:pl-8 text-blue-500 dark:text-blue-300"
+                        >
+                          {item.ps_title}
+                        </motion.td>
+                        <td className="border-b border-slate-100 dark:border-slate-700 pl-5 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
+                          {item.category}
+                        </td>
+                        <td className="border-b border-slate-100 dark:border-slate-700 pl-1 md:p-4 md:pl-8 text-slate-500 dark:text-slate-100">
+                          {item.domain}
+                        </td>
+                      </tr>
+                    ))
+                )}
               </tbody>
             </table>
           </div>
@@ -178,16 +209,19 @@ const Problems = () => {
             <div className="font-semibold flex text-sm md:text-base justify-center md:justify-start">
               <div className="mr-2">Showing</div>
               <div>
-                {" "}
-                {paginatedPosts[0].id.split("_")[1]} to{" "}
-                {paginatedPosts[paginatedPosts.length - 1].id.split("_")[1]} of{" "}
-                {data.length}{" "}
+                {paginatedPosts.length > 0 && (
+                  <>
+                    {paginatedPosts[0].id.split("_")[1]} to{" "}
+                    {paginatedPosts[paginatedPosts.length - 1].id.split("_")[1]}{" "}
+                    of {data.length}
+                  </>
+                )}
               </div>
               <div className="ml-2">entries</div>
             </div>
 
             <Pagination
-              items={data.length} // 100
+              items={filteredData.length} // 100
               currentPage={currentPage} // 1
               pageSize={value} // 10
               onPageChange={onPageChange}
