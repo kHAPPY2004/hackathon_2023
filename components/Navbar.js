@@ -106,7 +106,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                 >
-                  RULES
+                  GUIDELINE
                 </ScrollLink>
                 <ScrollLink
                   className="text-black dark:text-white hover:bg-gray-700 hover:text-white px-2 py-2 rounded-md text-sm font-bold"
