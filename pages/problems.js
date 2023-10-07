@@ -22,7 +22,7 @@ const Problems = () => {
   }
 
   const [search, setSearch] = useState("");
-  const [value, setValue] = useState("2");
+  const [value, setValue] = useState("8");
   const [currentPage, setCurrentPage] = useState(1);
   const onPageChange = (page) => {
     setCurrentPage(page);
@@ -105,22 +105,22 @@ const Problems = () => {
         className=" bg-gray-50 lll dark:bg-slate-700"
       >
         <div>
-          <img src="/problem_statement.png" alt="" className="mx-auto pt-12" />
+          <img src="/problem_statement.png" alt="" className="mx-auto pt-16" />
         </div>
-        <div className="flex items-center justify-center w-2/3 mx-auto mt-5">
-          <div className="w-1/3 bg-slate-300 dark:bg-slate-600 mx-auto p-4 rounded-l-lg">
-            <p className="text-3xl font-bold text-center text-orange-400">
+        <div className="flex items-center justify-center md:w-2/3 md:mx-auto mx-2 md:mt-5">
+          <div className="w-1/3 bg-slate-300 dark:bg-slate-600 mx-auto md:p-4 p-3 rounded-l-lg">
+            <p className="md:text-3xl font-bold text-center text-orange-400">
               TOTAL STATEMENTS
             </p>
-            <p className="text-center">As per available data</p>
+            <p className="text-center hidden md:block">As per available data</p>
           </div>
-          <div className="flex justify-around w-2/3 bg-gray-300 dark:bg-slate-600 p-2 rounded-r-lg">
+          <div className="flex justify-around w-2/3 bg-gray-300 dark:bg-slate-600 md:p-2 p-1 rounded-r-lg">
             <div className="w-2/5 text-center bg-slate-100 dark:bg-slate-500 py-2 rounded-full">
-              <p className="text-3xl font-bold">{hardwareCount}</p>
+              <p className="md:text-3xl font-bold">{hardwareCount}</p>
               <p>Hardware</p>
             </div>
             <div className="w-2/5 text-center bg-slate-100 dark:bg-slate-500 py-2 rounded-full">
-              <p className="text-3xl font-bold">{softwareCount}</p>
+              <p className="md:text-3xl font-bold">{softwareCount}</p>
               <p>Software</p>
             </div>
           </div>
@@ -148,9 +148,9 @@ const Problems = () => {
                 }}
                 className="mx-2 px-1 md:text-lg rounded-sm"
               >
-                <option value="2">8</option>
-                <option value="4">10</option>
-                <option value="6">15</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
                 <option value="25">25</option>
                 <option value="50">50</option>
                 <option value="100">100</option>
@@ -289,10 +289,10 @@ const Problems = () => {
           return (
             <div
               key={item.id}
-              className={`container ${item.id} hidden bg-white dark:bg-gray-700 md:mx-auto rounded-xl md:top-28 top-24 fixed z-50 justify-center text-center md:w-4/5 lg:w-full w-11/12 h-5/6 overflow-auto shadow-2xl dark:shadow-white shadow-slate-700`}
+              className={`container ${item.id} hidden bg-white dark:bg-gray-700 md:mx-auto rounded-xl md:top-28 top-20 fixed z-50 justify-center text-center md:w-4/5 lg:w-full bottom-3 overflow-auto shadow-2xl dark:shadow-white shadow-slate-700`}
             >
-              <div className="flex sticky top-0 z-10 bg-white/100 dark:bg-gray-800 items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+              <div className="flex sticky top-0 z-10 bg-white/100 dark:bg-gray-800 items-start justify-between md:p-4 p-2 border-b rounded-t dark:border-gray-600">
+                <h3 className="md:text-xl font-semibold text-gray-900 dark:text-white">
                   PROBLEM STATEMENT DETAILS
                 </h3>
                 <div
@@ -303,50 +303,50 @@ const Problems = () => {
                     });
                     blur();
                   }}
-                  className="text-gray-800 dark:text-white bg-gray-50 dark:bg-slate-700 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-2xl font-bold p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+                  className="text-gray-800 dark:text-white bg-gray-50 dark:bg-slate-700 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-lg md:text-2xl font-bold p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
                 >
                   <RxCross2 />
                 </div>
               </div>
-              <div className="flex w-full my-2">
-                <div className="flex-1 overflow-auto mx-2">
+              <div className="flex w-full md:my-2 my-1">
+                <div className="flex-1 overflow-auto md:mx-2 mx-1">
                   <div className="flex w-full bg-slate-100 dark:bg-gray-600">
-                    <div className="w-1/5 px-4 py-2 text-left border-b border-r border-t border-l border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-1/5 text-sm md:text-base md:px-4 px-0 md:py-2 py-1 text-left border-b border-r border-t border-l border-slate-600 dark:border-slate-200 font-medium md:font-bold text-slate-600 dark:text-slate-200">
                       Problem Statement ID
                     </div>
-                    <div className="w-4/5 px-4 py-2 text-left border-b border-r border-t border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-4/5 text-sm md:text-base md:px-4 px-1 md:py-2 py-1 text-left border-b border-r border-t border-slate-600 dark:border-slate-200 font-normal md:font-bold text-slate-600 dark:text-slate-200">
                       {item.ps_id}
                     </div>
                   </div>
                   <div className="flex w-full bg-emerald-50 dark:bg-slate-500">
-                    <div className="w-1/5 px-4 py-2 text-left border-b border-r  border-l border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-1/5 text-sm md:text-base md:px-4 px-0 md:py-2 py-1 text-left border-b border-r  border-l border-slate-600 dark:border-slate-200 font-medium md:font-bold text-slate-600 dark:text-slate-200">
                       Problem Statement Title
                     </div>
-                    <div className="w-4/5 px-4 py-2 text-left border-b border-r border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-4/5 text-sm md:text-base md:px-4 px-1 md:py-2 py-1 text-left border-b border-r border-slate-600 dark:border-slate-200 font-normal md:font-bold text-slate-600 dark:text-slate-200">
                       {item.ps_title}
                     </div>
                   </div>
                   <div className="flex w-full bg-slate-100 dark:bg-gray-600">
-                    <div className="w-1/5 px-4 py-2 text-left border-b border-r border-l border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-1/5 text-sm md:text-base md:px-4 px-0 text-left border-b border-r border-l border-slate-600 dark:border-slate-200 font-medium md:font-bold text-slate-600 dark:text-slate-200">
                       Description
                     </div>
-                    <div className="w-4/5 px-4 py-2 text-left border-b border-r border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-4/5 text-sm md:text-base md:px-4 px-1 text-left border-b border-r border-slate-600 dark:border-slate-200 font-normal md:font-bold text-slate-600 dark:text-slate-200">
                       {item.ps_data}
                     </div>
                   </div>
                   <div className="flex w-full bg-emerald-50 dark:bg-slate-500">
-                    <div className="w-1/5 px-4 py-2 text-left border-b border-r border-l border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-1/5 text-sm md:text-base md:px-4 px-0 text-left border-b border-r border-l border-slate-600 dark:border-slate-200 font-medium md:font-bold text-slate-600 dark:text-slate-200">
                       Category
                     </div>
-                    <div className="w-4/5 px-4 py-2 text-left border-b border-r border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-4/5 text-sm md:text-base md:px-4 px-1 text-left border-b border-r border-slate-600 dark:border-slate-200 font-normal md:font-bold text-slate-600 dark:text-slate-200">
                       {item.category}
                     </div>
                   </div>
                   <div className="flex w-full bg-slate-100 dark:bg-gray-600">
-                    <div className="w-1/5 px-4 py-2 text-left border-b border-r border-l border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-1/5 text-sm md:text-base md:px-4 px-0 text-left border-b border-r border-l border-slate-600 dark:border-slate-200 font-medium md:font-bold text-slate-600 dark:text-slate-200">
                       Domain Bucket
                     </div>
-                    <div className="w-4/5 px-4 py-2 text-left border-b border-r border-slate-600 dark:border-slate-200 font-bold text-slate-600 dark:text-slate-200">
+                    <div className="w-4/5 text-sm md:text-base md:px-4 px-1 text-left border-b border-r border-slate-600 dark:border-slate-200 font-normal md:font-bold text-slate-600 dark:text-slate-200">
                       {item.domain}
                     </div>
                   </div>
