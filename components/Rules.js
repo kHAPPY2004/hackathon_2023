@@ -1,7 +1,10 @@
 import React from "react";
 const Rules = () => {
   return (
-    <div id="rules" className="bg-slate-50 dark:bg-slate-700 lll md:pt-16">
+    <div
+      id="rules"
+      className="bg-slate-50 dark:bg-slate-700 lll md:pt-16 select-none"
+    >
       <div className="container mx-auto py-5">
         <div className="flex justify-center items-center align-middle">
           <h3

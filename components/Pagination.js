@@ -29,7 +29,7 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
   if (currentPage > 1) {
     pages.push(
       <ScrollLink
-        className="hover:text-gray-800 px-2 xl:px-0 dark:hover:text-gray-200 flex justify-center md:justify-start my-2 xl:my-0"
+        className="hover:text-gray-800 pr-1 xl:px-0 dark:hover:text-gray-200 flex justify-center md:justify-start xl:my-0"
         onClick={() => onPageChange(currentPage - 1)}
         to="problem_statement1"
         smooth={true}
@@ -38,6 +38,12 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
       >
         Previous
       </ScrollLink>
+    );
+  } else {
+    pages.push(
+      <span className="text-gray-400 px-2 xl:px-0" key="prev-disabled">
+        Previous
+      </span>
     );
   }
 
@@ -68,7 +74,7 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
       <ScrollLink
         className={`${currentPage === page ? "bg-gray-400 " : ""}${
           currentPage === page && "dark:bg-blue-300"
-        }border px-2 rounded-md hover:bg-gray-300 border-black dark:border-white dark:hover:bg-gray-600`}
+        } border px-2 rounded-md hover:bg-gray-300 border-black dark:border-white dark:hover:bg-gray-600`}
         onClick={() => onPageChange(page)}
         to="problem_statement1"
         smooth={true}
@@ -105,7 +111,7 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
   if (currentPage < pagesCount) {
     pages.push(
       <ScrollLink
-        className="hover:text-gray-800 px-2 xl:px-0 dark:hover:text-gray-200 flex justify-center md:justify-start my-2 xl:my-0"
+        className="hover:text-gray-800 pl-1 xl:px-0 dark:hover:text-gray-200 flex justify-center md:justify-start xl:my-0"
         onClick={() => onPageChange(currentPage + 1)}
         to="problem_statement1"
         smooth={true}
@@ -115,10 +121,16 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
         Next
       </ScrollLink>
     );
+  } else {
+    pages.push(
+      <span className="text-gray-400 px-2 xl:px-0" key="next-disabled">
+        Next
+      </span>
+    );
   }
 
   return (
-    <div className="select-none pagination-container xl:flex xl:space-x-2 mt-3 xl:mt-0 font-medium text-lg cursor-pointer bg-slate-100 dark:bg-slate-600 dark:xl:bg-transparent xl:bg-transparent">
+    <div className="select-none pagination-container flex space-x-1 xl:space-x-2 mt-3 xl:mt-0 font-medium text-lg cursor-pointer bg-slate-100 dark:bg-slate-600 dark:xl:bg-transparent xl:bg-transparent">
       {pages}
     </div>
   );

@@ -268,6 +268,9 @@ const Problems = () => {
                     of {data.length}
                   </>
                 )}
+                {paginatedPosts.length == 0 && (
+                  <div className="text-red-400">0</div>
+                )}
               </div>
               <div className="ml-2">entries</div>
             </div>
